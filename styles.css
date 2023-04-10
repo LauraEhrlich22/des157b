@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddd;
+    color: #333;
+    font-family: 'Comfortaa', cursive;
+    transition: all 2s;
+}
+
+body.switch {
+    background-color: #121212;
+    color: rgb(235, 235, 235);
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+    height: 240px;
+    text-align: center;
+}
+
+h1.switch{
+    color: coral;
+}
+
+h1{
+    color:rgb(0, 179, 255);
+}
+
+h2.switch{
+    color: #b9b9b9;
+}
+
+h2{
+    color: #636363;
+    font-weight: 400;
+}
+
+h3{
+    text-align: left;
+    padding-left: 1.2em;
+    color: lightseagreen;
+    font-weight: 800;
+}
+
+h3.switch{
+    color: orange;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 200px;
+    margin: auto;
+    /* background-color: rgb(235, 235, 235); */
+    color: rgb(235, 235, 235);
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+}
+
+#banner.switch {
+    /* background-color: #333; */
+    color: #333;
+    transition: all 2s;
+}
+
+img{
+    /* padding-top:1.2em; */
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    top: 1.7em;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+main section {
+    width: 25%;
+    /* border: 3px rgb(255, 198, 41) solid; */
+    margin: 0 .25em;
+    border-radius: 100px;
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: #333;
+}
+
+section a:hover {
+    border-radius: 100px;
+    background-color: #333;
+    color: lightseagreen;
+    font-weight: 800;
+    padding: .5em;
+}
+
+section.switch a {
+    color: #d3d3d3;
+}
+
+section.switch a:hover {
+    background-color: #ffffff;
+    color: orange;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    padding: 12px;
+    
+  
+    background-color: rgb(0, 179, 255);
+    color: #d3d3d3;
+    font-weight: 800;
+    /* color: #333; */
+    border: 1px solid transparent;
+    border-radius: 100px;
+}
+
+button:hover {
+    background-color: #333;
+    color: lightseagreen;
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: #d3d3d3;
+    color: coral;
+}
+
+button.switch:hover {
+    background-color:coral;
+    color: #ddd;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.show{
+    opacity: 100;
+}
+
