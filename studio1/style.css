@@ -1,0 +1,54 @@
+
+#video{
+    min-width: 100%;
+    min-height: 100%;
+    max-height:120%;
+    max-width: 120%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border: none;
+}
+
+#overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    opacity: .15;
+    /* background-color: red; */
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 100;
+    
+}
+
+.fa-expand{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: orange;
+    
+}
+.fa-expand:hover{
+    cursor:pointer;
+}
+
+section{
+    position:absolute;
+    top:50%;
+    left:20%;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.showing{
+    opacity: 1;
+}
+
+img{
+    width: 300px;
+    height: 600px;
+}
