@@ -183,10 +183,12 @@ button:hover{
 
 @keyframes fading-gradient{
    
-    0%   {background: linear-gradient(red, orange)};
-    25%  {background: linear-gradient(orange, yellow)};
-    50%  {background: linear-gradient(yellow, orange)};
-    100% {background: linear-gradient(pink, orange)};
+    0% {
+        background: linear-gradient(red, orange)
+    }
+    25%  {background: linear-gradient(orange, yellow)}
+    50%  {background: linear-gradient(yellow, orange)}
+    100% {background: linear-gradient(pink, orange)}
 }
 @keyframes lds-ripple {
 	0% {
