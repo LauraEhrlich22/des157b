@@ -119,7 +119,7 @@ function changeBackground(data, point,steps){
     const h3 = document.querySelector("h3")
     img.remove();
     h3.remove();
-    body.innerHTML += `<img src=${point}>`;
+    body.innerHTML += `<img class="image" src=${point}>`;
     body.innerHTML += `<h3>steps: ${steps}</h3>`;
     getData();
 }
