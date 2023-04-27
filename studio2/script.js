@@ -60,6 +60,7 @@ async function getData(){
     p7.addEventListener("mouseover", function(){
         const point = data.point7.image
         const steps = data.point7.steps
+        const h1 = document.querySelector("h1");
         changeBackground(data, point,steps);
     })
 
@@ -82,6 +83,7 @@ async function getData(){
     p11.addEventListener("mouseover", function(){
         const point = data.point11.image
         const steps = data.point11.steps
+        h1.style.color = "white";
         changeBackground(data, point,steps);
     })
     p12.addEventListener("mouseover", function(){
