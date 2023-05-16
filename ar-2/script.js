@@ -7,7 +7,8 @@ const body = document.querySelector("body");
 const aframe = document.querySelector(".aframe");
 
 a.addEventListener("click", function(){
-    body.innerHTML = "<a-scene vr-mode-ui='enabled: false;'loading-screen='enabled: false;'arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'id='scene'embedded gesture-detector><a-marker id='animated-marker' type='pattern' preset='custom' url='assets/marker.patt' raycaster='objects: .clickable' emitevents='true' cursor='fuse: false; rayOrigin: mouse;' id='markerA'><a-image src='assets/asset.png' scale='1 1 1' class='clickable' rotation='-90 0 0' gesture-handler></a-image></a-marker><a-entity camera id='camera'></a-entity></a-scene>"
+    window.open("ar.html")
+    // body.innerHTML = "<a-scene vr-mode-ui='enabled: false;'loading-screen='enabled: false;'arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'id='scene'embedded gesture-detector><a-marker id='animated-marker' type='pattern' preset='custom' url='assets/marker.patt' raycaster='objects: .clickable' emitevents='true' cursor='fuse: false; rayOrigin: mouse;' id='markerA'><a-image src='assets/asset.png' scale='1 1 1' class='clickable' rotation='-90 0 0' gesture-handler></a-image></a-marker><a-entity camera id='camera'></a-entity></a-scene>"
     mainpage.remove();
 })
 
