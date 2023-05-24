@@ -1,0 +1,121 @@
+body, main{
+    font-family: 'Roboto', sans-serif;
+    /* width:100vw; */
+}
+
+h1{
+    padding-left:5vw;
+}
+
+h1 a{
+    color:blue;
+}
+
+.map{
+    width:100vw;
+    height:80vh;
+    background: grey;
+}
+
+main p{
+    position: absolute;
+    /* left:50vw; */
+    right:5vw;
+    font-weight: 300;
+}
+
+main img{
+    position: absolute;
+    width:70vw;
+    height:40h;
+    left: 10vw; 
+    top:60vw;
+    border:20px solid white;
+    border-bottom: 80px solid white;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
+}
+
+.img-desc{
+    padding-top:63vh;
+    padding-right:15vw;
+    padding-left:15vw;
+    z-index:100;
+}
+strong{
+    font-weight: 500;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    /* border-radius: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vw;
+  }
+
+  .split-top{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo{
+    width:27vw;
+    height:10vh;
+    /* padding-top:10vh; */
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 20px 16px;
+    /* padding-right: 0px; */
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    /* background: black; */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  /* .topnav a:hover {
+    background-color: black;
+    color: black;
+  } */
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    /* position: absolute; */
+    background-color: #fff;
+    color: white;
+  }
+  
+  button{
+    position: absolute;
+    top:87vh;
+    left:35vw;
+    background-color: blue;
+    border-radius: 30px;
+    height:3em;
+    width: 7em;
+    color:white;
+    font-weight:400;
+    border: none;
+    font-size: 17px;
+  }
+
+
+
+
