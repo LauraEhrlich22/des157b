@@ -32,10 +32,10 @@ main p{
     z-index:0;
 }
 
-main img{
+.front-image img{
     position: absolute;
     width:55vw;
-    height:40h;
+    height:20h;
     left: 17vw; 
     top:45vw;
     border:20px solid white;
