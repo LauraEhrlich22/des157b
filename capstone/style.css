@@ -4,9 +4,44 @@ body, main{
     z-index:0;
 }
 
+.green-icon{
+    width:100px;
+    height: 100px;
+    z-index:90;
+    border: none;
+    top:30vh;
+    left:30vw;
+}
+
+.banner{
+    position: absolute;
+    width:50vw;
+    height: 8vh;
+    background-color: white;
+    z-index: 100;
+    border-radius: 20px;
+    top: 30vh;
+    left: 45vw;
+    filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
+}
+
 h1{
     padding-left:5vw;
     z-index: 0;
+}
+
+h4{
+    font-size: .9em;
+    padding-left:2vw;
+    
+}
+
+h5{
+    /* padding-top:-20vh; */
+    position: absolute;
+    top:1.5vh;
+    padding-left:2vw;
+    color:rgb(115, 115, 115)
 }
 
 .container{
@@ -75,7 +110,7 @@ strong{
   }
 
   .logo{
-    width:30vw;
+    width:150px;
     height:13vh;
     /* padding-top:10vh; */
   }
