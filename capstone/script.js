@@ -5,6 +5,8 @@ menu.addEventListener("click", function() {
     if (x.style.display === "block") {
       x.style.display = "none";
       topnav.style.filter = "none"
+      topnav.style.height = "10vh";
+     
     } else {
       x.style.display = "block";
       topnav.style.width = "60vw";
@@ -12,6 +14,7 @@ menu.addEventListener("click", function() {
     //   topnav.style.backgroundColor = "grey";
       topnav.style.borderRadius = "20px";
       topnav.style.filter = "drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315))";
+      topnav.style.zIndex = "100";
 
     //   width:60vw;
     //   height:40vh;
