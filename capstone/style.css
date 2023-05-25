@@ -37,7 +37,7 @@ main img{
     width:70vw;
     height:40h;
     left: 10vw; 
-    top:60vw;
+    top:40vw;
     border:20px solid white;
     border-bottom: 80px solid white;
     border-radius: 20px;
@@ -45,7 +45,7 @@ main img{
 }
 
 .img-desc{
-    padding-top:63vh;
+    padding-top:53vh;
     padding-right:15vw;
     padding-left:15vw;
     z-index:1;
@@ -113,7 +113,7 @@ strong{
   
   button{
     position: absolute;
-    top:87vh;
+    top:80vh;
     left:35vw;
     background-color: blue;
     border-radius: 30px;
