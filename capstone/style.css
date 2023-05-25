@@ -32,7 +32,15 @@ main p{
     z-index:0;
 }
 
-.front-image img{
+.front-image{
+    position: absolute;
+    width:90vw;
+    height:20h;
+    left: 0vw; 
+    top:10vw;
+}
+
+main img{
     position: absolute;
     width:55vw;
     height:20h;
@@ -43,10 +51,9 @@ main p{
     border-radius: 20px;
     filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
 }
-
 .img-desc{
-    padding-top:55vh;
-    padding-right:10vw;
+    padding-top:57vh;
+    padding-right:0vw;
     padding-left:22vw;
     z-index:1;
 }
@@ -113,7 +120,7 @@ strong{
   
   button{
     position: absolute;
-    top:86vh;
+    top:77vh;
     left:35vw;
     background-color: blue;
     border-radius: 30px;
