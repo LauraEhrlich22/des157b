@@ -27,17 +27,17 @@ h1 a{
 main p{
     position: absolute;
     /* left:50vw; */
-    right:5vw;
+    right: 10vw;
     font-weight: 300;
     z-index:0;
 }
 
 main img{
     position: absolute;
-    width:70vw;
+    width:55vw;
     height:40h;
-    left: 10vw; 
-    top:40vw;
+    left: 17vw; 
+    top:45vw;
     border:20px solid white;
     border-bottom: 80px solid white;
     border-radius: 20px;
@@ -45,9 +45,9 @@ main img{
 }
 
 .img-desc{
-    padding-top:53vh;
-    padding-right:15vw;
-    padding-left:15vw;
+    padding-top:55vh;
+    padding-right:10vw;
+    padding-left:22vw;
     z-index:1;
 }
 strong{
@@ -68,8 +68,8 @@ strong{
   }
 
   .logo{
-    width:27vw;
-    height:10vh;
+    width:30vw;
+    height:13vh;
     /* padding-top:10vh; */
   }
   
@@ -113,7 +113,7 @@ strong{
   
   button{
     position: absolute;
-    top:80vh;
+    top:86vh;
     left:35vw;
     background-color: blue;
     border-radius: 30px;

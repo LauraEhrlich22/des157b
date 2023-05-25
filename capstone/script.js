@@ -10,7 +10,7 @@ menu.addEventListener("click", function() {
     } else {
       x.style.display = "block";
       topnav.style.width = "60vw";
-      topnav.style.height = "40vh"
+      topnav.style.height = "30vh"
     //   topnav.style.backgroundColor = "grey";
       topnav.style.borderRadius = "20px";
       topnav.style.filter = "drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315))";
