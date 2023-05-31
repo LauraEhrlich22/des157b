@@ -25,6 +25,13 @@ body, main{
     filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
 }
 
+video{
+  padding:0;
+  left:0;
+  height: 100vh;
+  position: fixed;
+
+}
 h1{
     padding-left:5vw;
     z-index: 0;
@@ -45,7 +52,7 @@ h5{
 }
 
 .container{
-    height: 100vh;
+    /* height: 200vh; */
 }
 
 h1 a{
@@ -165,9 +172,149 @@ strong{
     font-weight:400;
     border: none;
     font-size: 17px;
+    z-index:100;
   }
 
+  svg{
+    position: absolute;
+    width:7em;
+    height:3em;
+    top:22vh;
+    right:5vw;
+    z-index: 100;
+    /* background-color: none; */
+  }
+
+  .note{
+    background-color: white;
+    height:40vh;
+    width:75vw;
+    z-index: 100;
+    top:20vh;
+    left:20vw;
+    border-radius: 20px;
+    position: absolute;
+    filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
+
+  }
+
+  .n{
+    position: absolute;
+    top:10vh;
+  }
+
+  .n1{
+    position: absolute;
+    top:30vh;
+    left:39vw;
+  }
+  
+  .n2{
+    position: absolute;
+    top:30vh;
+    left:5vw;
+  }
+
+  .pop-img{
+    /* position: absolute; */
+    width:25vw;
+    height:7vh;
+    /* padding:0; */
+  }
+
+  .hide{
+    opacity: 0;
+  }
+
+  main p, h3{
+    position: absolute;
+    padding-left:10vw;
+  }
+
+  h3{
+    top: 50vh;
+    padding:8vw;
+    /* color:; */
+    font-size: 25px;
+  }
+  p{
+    top: 60vh;
+    padding-left:15vw;
+    padding-right:10vw;
+    /* color:white; */
+  }
+
+ .r{
+    position: absolute;
+    left:0;
+    z-index:-1;
+    background-color: royalblue;
+    height:70vh;
+    width:100vw;
+    padding:0;
+    top:85vh;
+    padding-top: 5vh;
+    color: white;
+ }
 
 
+ h4, h2{
+  /* position: absolute; */
+    padding-left:10vw;
+ }
 
+ h4{
+  /* letter-spacing: .1em */
+ }
 
+ .review{
+  position: absolute;
+  color:white;
+  top: 15vh;
+  font-size: 14px;
+ 
+ }
+
+form{
+  height:50vh;
+  width:70vw;
+  left:10vw;
+  top:20vh;
+  padding-top: 4vh;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 100;
+  padding-left: 10vw;
+}
+form h2{
+  padding-left: 0vw;
+}
+
+input{
+  border-radius: 20px;
+  padding: 0;
+  height:30vh;
+  width: 60vw;
+  background-color: gainsboro;
+  border: none;
+}
+
+input[type=submit]{
+  position: absolute;
+  top:45vh;
+  left:25vw;
+  background-color: blue;
+  border-radius: 30px;
+  height:3em;
+  width: 7em;
+  color:white;
+  font-weight:400;
+  border: none;
+  font-size: 17px;
+  z-index:100;
+}
+
+.svg:hover{
+  background-color: #fff;
+}
