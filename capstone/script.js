@@ -1,4 +1,4 @@
-alert("Hello! Thank you for testing my project. Please complete the following tasks:1.pretend like you are already at a location on the bikeloop and add a note there for someone2.Find the history page for the arboreturm.3.Find the reviews for the walker hall location")
+// alert("Hello! Thank you for testing my project. Please complete the following tasks:1.pretend like you are already at a location on the bikeloop and add a note there for someone2.Find the history page for the arboreturm.3.Find the reviews for the walker hall location")
 const menu = document.querySelector(".menu")
 let h = "a";
 const c = document.querySelector(".c");
@@ -27,7 +27,7 @@ menu.addEventListener("click", function() {
     }
   })
 
-  var video = document.querySelector("#videoElement");
+var video = document.querySelector("#videoElement");
 
 if (navigator.mediaDevices.getUserMedia) {
   navigator.mediaDevices.getUserMedia({ video: true })
@@ -87,6 +87,7 @@ function map(){
 // })
 
 var plus = document.querySelector(".svg");
+plus.style.backgroundColor = "blue";
 var note = document.querySelector(".note")
 plus.addEventListener("click", function(){
   note.classList.remove("hide");
