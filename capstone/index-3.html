@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Access</title>
+    <style>
+        #container {
+            margin: 0px auto;
+            width: 100vw;
+            height: 100vh;
+            /* border: 10px #333 solid; */
+        }
+        #container video {
+            width: 100vw;
+            height: 100vh;
+            /* background-color: #666; */
+        }
+
+        form{
+            position: absolute;
+            left:50vw;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <form>
+            <input type="text">
+        </form>
+
+        <!-- note the addition of muted and playsinline! -->
+        <video autoplay muted playsinline>
+        
+        </video>
+    </div>
+
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const video = document.querySelector("#container video");
+
+        async function getMedia(constraints) {
+            let stream = null;
+
+            try {
+                stream = await navigator.mediaDevices.getUserMedia(constraints);
+                //see function defined below...
+                displayVideo(stream)
+            } catch (err) {
+                console.log('this went wrong:' + err);
+            }
+        }
+
+        function displayVideo(stream) {
+            video.srcObject = stream;
+            /* this waits until the metadata has loaded
+            before it tries to start playing the video. Not
+            100% sure this matters, but it might */
+            video.onloadedmetadata = function(event) {
+                video.play();
+            }
+        }
+
+        getMedia({ video: true });
+
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
+
+        function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+        }
+
+    </script>
+    
+</body>
+</html>

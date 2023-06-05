@@ -27,25 +27,57 @@ menu.addEventListener("click", function() {
     }
   })
 
-var video = document.querySelector("#videoElement");
 
-if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function (stream) {
+  const video = document.querySelector("#container video");
+
+  async function getMedia(constraints) {
+      let stream = null;
+
+      try {
+          stream = await navigator.mediaDevices.getUserMedia(constraints);
+          //see function defined below...
+          displayVideo(stream)
+      } catch (err) {
+          console.log('this went wrong:' + err);
+      }
+  }
+
+  function displayVideo(stream) {
       video.srcObject = stream;
-    //   video.autoplay = true;
-    })
-    .catch(function (err0r) {
-      console.log("Something went wrong!");
-    });
-}
+      /* this waits until the metadata has loaded
+      before it tries to start playing the video. Not
+      100% sure this matters, but it might */
+      video.onloadedmetadata = function(event) {
+          video.play();
+      }
+  }
+
+  getMedia({ video: true });
+
+  var x = document.getElementById("demo");
+
+
 
 var plus = document.querySelector(".svg");
 // plus.style.backgroundColor = "blue";
-var note = document.querySelector(".note")
+var note = document.querySelector(".note");
+// var form = document.querySelector("input");
+
+function setCursorToTopLeft(inputelem) {
+  inputelem.setSelectionRange(0, 0);
+}
+const input = document.querySelector('input');
+setCursorToTopLeft(input);
+
+
 plus.addEventListener("click", function(){
   note.classList.remove("hide");
   console.log("here")
 })
 
 var notebutton = document.querySelector(".n1")
+var form = document.querySelector("form");
+notebutton.addEventListener("click", function(){
+    form.classList.remove("hide")
+    note.classList.add("hide");
+})

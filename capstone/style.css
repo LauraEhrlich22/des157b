@@ -1,27 +1,70 @@
-body, main{
+body{
     font-family: 'Roboto', sans-serif;
     /* width:100vw; */
     z-index:0;
 }
 
-.green-icon{
-    width:100px;
-    height: 100px;
-    z-index:90;
+main{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  height:90vh;
+}
+
+.top-text{
+  position: relative;
+  height:5vh;
+  width:100vw;
+  /* left:10vw;
+  right: 10vw; */
+  font-weight: 300;
+  z-index:0;
+  padding-left: 0vw;
+}
+
+.top-text p{
+  top: 0;
+}
+
+.front-image{
+    position: relative;
+    width:100vw;
+    height: 45vh;
+    z-index:100;
     border: none;
-    top:30vh;
-    left:30vw;
+    padding-left: 15vw;
+    top:10vh;
+    /* top:15vh; */
+    /* left: 20vw; */
+    /* padding: 30vw; */
+    /* padding-left: ; */
+    justify-content: center;
+}
+
+.green-icon{
+  position: absolute;
+  width:20vw;
+  height: 10vh;
+  z-index:150;
+  border: none;
+  outline: none;
+  top:15vh;
+  /* padding: 30vw; */
+ right:48vw;
+ 
+  /* padding-left: ; */
+  /* justify-content: center; */
 }
 
 .banner{
     position: absolute;
     width:50vw;
-    height: 8vh;
+    height: 9vh;
     background-color: white;
-    z-index: 100;
+    z-index: 200;
     border-radius: 20px;
-    top: 30vh;
-    left: 45vw;
+    top: 15vh;
+    left: 40vw;
     filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
 }
 
@@ -30,6 +73,7 @@ video{
   left:0;
   height: 100vh;
   position: fixed;
+  /* z-index:300; */
 
 }
 h1{
@@ -40,8 +84,11 @@ h1{
 .d{
     font-size: .9em;
     padding-left:2vw;
+    position: absolute;
+    top:0;
     
 }
+
 
 h5{
     /* padding-top:-20vh; */
@@ -52,7 +99,9 @@ h5{
 }
 
 .container{
-    height: 200vh;
+    height: 100vh;
+    z-index:300;
+    /* background-color: black; */
 }
 
 h1 a{
@@ -64,41 +113,63 @@ h1 a{
     width:100vw;
     height:80vh;
     background: grey;
+    color:black;
+}
+#map a{
+  color: rgb(87, 87, 87);
+  text-decoration: none;
+  font-weight: 700;
+}
+#map{
+  width:100vw;
+  height:80vh;
 }
 
-.t{
-    position: absolute;
-    left:10vw;
+/* .t{
+    /* position: absolute; */
+    /* left:10vw;
     right: 10vw;
     font-weight: 300;
     z-index:0;
-    top:15vh;
+    top:10vh; */
+
+.front-butt{
+  position: relative;
+  top: 15vh;
+  height:40vh;
 }
 
-.front-image{
-    position: absolute;
-    width:90vw;
-    height:20h;
-    left: 0vw; 
-    top:10vw;
+.fb{
+  top:10vh;
 }
 
-main img{
-    position: absolute;
+
+
+.front-image img{
+    /* position: absolute; */
+    justify-content: center;
+    z-index: 90;
     width:55vw;
     height:20h;
-    left: 17vw; 
+    /* padding-right: 5vw;  */
     top:45vw;
+    left:20vw;
     border:20px solid white;
     border-bottom: 80px solid white;
     border-radius: 20px;
     filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
 }
+
+.history a{
+  color:black;
+}
+
 .img-desc{
     position: absolute;
-    top:58vh;
-    padding-right:5vw;
-    padding-left:22vw;
+    /* padding-bottom: 5vh; */
+    top:45vh;
+    padding-right:40vw;
+    padding-left:5vw;
     z-index:100;
 }
 strong{
@@ -119,7 +190,7 @@ strong{
   }
 
   .logo{
-    width:150px;
+    width:35vw;
     height:13vh;
     /* padding-top:10vh; */
   }
@@ -181,9 +252,9 @@ strong{
     /* position: absolute; */
     width:7em;
     height:3em;
-    /* top:10vh;
-    left:30vw;
-    z-index: 100; */
+    top:10vh;
+    /* left:30vw; */
+    z-index: 101; 
     /* background-color: none;
     */
   }
@@ -229,6 +300,7 @@ strong{
 
   .hide{
     opacity: 0;
+    z-index:0;
   }
 
   main p, h3{
@@ -303,6 +375,11 @@ input{
   width: 60vw;
   background-color: gainsboro;
   border: none;
+}
+
+input[type=text]:focus{
+  outline: none;
+  border:5px solid rgb(98, 98, 98);
 }
 
 input[type=submit]{
