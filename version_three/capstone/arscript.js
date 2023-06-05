@@ -81,3 +81,4 @@ notebutton.addEventListener("click", function(){
     form.classList.remove("hide")
     note.classList.add("hide");
 })
+

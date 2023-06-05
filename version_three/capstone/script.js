@@ -1,4 +1,4 @@
-// alert("Hello! Thank you for testing my project. Please complete the following tasks:1.pretend like you are already at a location on the bikeloop and add a note there for someone2.Find the history page for the arboreturm.3.Find the reviews for the walker hall location")
+alert("Hello! Thank you for testing my project. Please complete the following tasks:1.pretend like you are already at a location on the bikeloop and add a note there for someone2.Find the history page for the arboreturm.3.Find the reviews for the walker hall location")
 const menu = document.querySelector(".menu")
 let h = "a";
 const c = document.querySelector(".c");
