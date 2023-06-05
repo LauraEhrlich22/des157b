@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="arscript.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Sigmar&family=Tilt+Warp&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>In the Loop</title>
 </head>
 <body>
-
     <div class="split-top">
       
         <div class="topnav">
@@ -31,26 +30,33 @@
         <a href="index.html" class="logo"><img class="logo" src="logo.png"></a>
     </div>
 
-    <main>
-        <p class = "t"><em>Keeping you in the loop about all things Davis</em></p>
-        <div class="front-image">
-            <div class="banner">
-                <h4 class="d">Dobbins Baseball Stadium</h4>
-                <h5 class = "d5">Davis Bikeloop</h5>
-            </div>
-            <img class="green-icon" src="bikeloopicon.png">
-            <p class="img-desc">so you can catch those iconic Davis sunsets just like this.</p>
-            <img src ="dobbinssunset.jpg">
+    <div id="container">
+        <!-- <i class="fa-solid fa-plus" style="color: #ffffff;"></i> -->
+        <div class="note hide">
+            <h3 class = "n">Would you like to leave a note or review?</h3>
+            <button class="n1">Note</button>
+            <button class = "n2">Review</button>
         </div>
-        <button onclick= "window.location.href='map.html'">explore</button>
-        <!-- <button href="map.html">Explore</button> -->
-    </main>
+        <button class="svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg></button>
+        <form class = "hide">
+            <h2>Write your note below</h3>
+            <input type="text">
+            <input type ="submit" value = "Submit">
+        </form>
+    
+            <!-- note the addition of muted and playsinline! -->
+            <video autoplay muted playsinline>
+            
+            </video>
+        </div>
+        <div class="sample-note">
+            <h4>Julie's Scavenger Hunt</h4>
+            <p>Hi Julie! Glad to see you were able to find the first spot on your scavenger hunt. Go to the the place at UC Davis where you read.</p>
+        </div>
+    </div>
 
     
-
-
-
-
+    
     
 </body>
 </html>

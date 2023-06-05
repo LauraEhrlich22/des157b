@@ -69,7 +69,7 @@ function map(){
   var arroyo_park = L.marker([38.55389, -121.77361]).addTo(map); //arroyo park
   arroyo_park.addEventListener("click", function(){
       h = "arroyo park";
-      arroyo_park.bindPopup("<b>Arroyo Park</b><br><img class='pop-img' src='arroyo_park.jpg'><br><a href='arroyo_history.html' class='history'>Learn More</a>").openPopup();
+      arroyo_park.bindPopup("<b>Arroyo Park</b><br><img class='pop-img' src='arroyo_park.jpg'><br><a href='arroyo_history.html' style: color='black' class='history'>Learn More</a>").openPopup();
       })
   var sycamore_park = L.marker([38.55583, -121.76639]).addTo(map); //sycamore park
       sycamore_park.addEventListener("click", function(){
@@ -87,7 +87,7 @@ function map(){
 // })
 
 var plus = document.querySelector(".svg");
-plus.style.backgroundColor = "blue";
+// plus.style.backgroundColor = "blue";
 var note = document.querySelector(".note")
 plus.addEventListener("click", function(){
   note.classList.remove("hide");
