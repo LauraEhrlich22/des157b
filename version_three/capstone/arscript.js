@@ -2,6 +2,8 @@
 const menu = document.querySelector(".menu")
 let h = "a";
 const c = document.querySelector(".c");
+// const isIphone = /iPhone|iPad|iPod/.test(navigator.userAgent);
+
 menu.addEventListener("click", function() {
     var x = document.getElementById("myLinks");
     var topnav = document.querySelector(".topnav")
@@ -42,6 +44,7 @@ menu.addEventListener("click", function() {
       }
   }
 
+  
   function displayVideo(stream) {
       video.srcObject = stream;
       /* this waits until the metadata has loaded
@@ -52,7 +55,8 @@ menu.addEventListener("click", function() {
       }
   }
 
-  getMedia({ video: true });
+  getMedia({ video: { facingMode: 'environment' } });
+  // getMedia({ video: true });
 
   var x = document.getElementById("demo");
 
