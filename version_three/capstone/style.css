@@ -34,7 +34,10 @@ main{
     height: 45vh;
     z-index:100;
     border: none;
-    padding-left: 15vw;
+    display:block;
+    /* padding-left: 15vw; */
+    margin-left: auto;
+    margin-right: auto;
     top:10vh;
     /* top:15vh; */
     /* left: 20vw; */
@@ -268,7 +271,7 @@ a .green{
   }
 
   .logo{
-    width:30vw;
+    width:28vw;
     height:10vh;
     /* padding-top:10vh; */
   }
