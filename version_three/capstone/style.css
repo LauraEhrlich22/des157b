@@ -7,10 +7,12 @@ body{
 
 main{
   position: relative;
-  display:flex;
-  flex-direction: column;
-  height:90vh;
-  background-color: rgb(255, 255, 255);
+  /* display:flex; */
+  /* flex-direction: column; */
+  padding: 0;
+  /* height:90vh;
+  width:100vw; */
+  /* background-color: rgb(255, 255, 255); */
 }
 
 .top-text{
@@ -36,8 +38,8 @@ main{
     border: none;
     display:block;
     /* padding-left: 15vw; */
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     top:10vh;
     /* top:15vh; */
     /* left: 20vw; */
@@ -125,6 +127,8 @@ h5{
 }
 
 .c{
+  margin-top:5vh;
+  width:40vh;
   border:20px solid white;
   border-bottom: 80px solid white;
   border-radius: 20px;
@@ -133,11 +137,14 @@ h5{
 
 .img-generic{
   /* position: absolute; */
-  /* top:10vh; */
-  /* padding-top: 1vh; */
-  justify-self: center;
-  width:80vw;
+  display: block;
+  width:75vw;
   height:25vh;
+  padding:0;
+  margin-left:auto;
+  margin-right:auto;
+  /* left: 17vw;  */
+  /* top:45vw; */
   border:20px solid white;
   border-bottom: 80px solid white;
   border-radius: 20px;
@@ -208,13 +215,15 @@ a:visited{
 
 .front-image img{
     /* position: absolute; */
-    justify-content: center;
+    /* display: block; */
+    /* justify-content: center; */
     z-index: 90;
-    width:55vw;
+    width:50vw;
     height:20h;
+    padding:0;
     /* padding-right: 5vw;  */
-    top:45vw;
-    left:20vw;
+    /* top:45vw; */
+    /* left:20vw; */
     border:20px solid white;
     border-bottom: 80px solid white;
     border-radius: 20px;
@@ -280,6 +289,18 @@ a .green{
   .topnav #myLinks {
     display: none;
   }
+
+  .history-page{
+    width:100vw;
+    background-color: blue;
+    left:0;
+    color:rgb(255, 255, 255);
+    top: 2vh;
+  }
+
+  /* .sycamore-img{
+    height:40vh;
+  } */
   
   /* Style navigation menu links */
   .topnav a {
@@ -378,7 +399,7 @@ a .green{
 
   .pop-img{
     /* position: absolute; */
-    width:25vw;
+    width:40vw;
     height:7vh;
     /* padding:0; */
   }
@@ -403,13 +424,30 @@ a .green{
     font-weight: 400;
   } 
 
+  h3{
+    /* position: absolute; */
+    padding-left:10vw;
+    font-size: 1.25em;
+    color: rgb(34, 34, 34);
+    padding-right: 5vw;
+    top:3vh;
+    /* top:20vh;s */
+    font-weight: 500;
+  } 
+
+  .section1{
+    height:90vh;
+    width:100vw;
+    background-color: #fff;
+  }
+
   /* strong{
     color:blue;
   } */
   
   p{
     top: 60vh;
-    padding-left:15vw;
+    padding-left:10vw;
     padding-right:10vw;
     /* color:white; */
   }
@@ -460,7 +498,22 @@ form h2{
 }
 
 h2{
+  /* font-size: 1.7em; */
   padding-left:10vw;
+}
+
+.cow{
+  position: absolute;
+  top:30vh;
+  left:5vw;
+  width:19vw;
+  height:8vh;
+}
+
+.white{
+  color:white;
+  padding-left:10vw;
+  padding-bottom:5vh;
 }
 
 input{
