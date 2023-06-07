@@ -2,6 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
     /* width:100vw; */
     z-index:0;
+    background-color: white;
 }
 
 main{
@@ -9,6 +10,7 @@ main{
   display:flex;
   flex-direction: column;
   height:90vh;
+  background-color: rgb(255, 255, 255);
 }
 
 .top-text{
@@ -42,18 +44,29 @@ main{
 }
 
 .green-icon{
-  position: absolute;
-  width:20vw;
-  height: 10vh;
+  /* position: absolute; */
+  /* padding-top: 20vh;
+  padding-left: 20vw; */
+  width:40vw;
+  height: 18vh;
   z-index:150;
   border: none;
   outline: none;
-  top:15vh;
+  /* top:15vh; */
   /* padding: 30vw; */
- right:48vw;
+ /* right:48vw; */
  
   /* padding-left: ; */
   /* justify-content: center; */
+}
+
+.block1{
+  position: absolute;
+  width:100vw;
+  height:50vh;
+  top:43vh;
+  background-color: blue;
+  color:white;
 }
 
 .banner{
@@ -77,8 +90,12 @@ video{
 
 }
 h1{
+    /* top:5vh; */
+    padding-top: 5vh;
     padding-left:5vw;
     z-index: 0;
+    padding-right: 5vw;
+    color:rgb(32, 32, 32);
 }
 
 .d{
@@ -93,8 +110,8 @@ h1{
 h5{
     /* padding-top:-20vh; */
     position: absolute;
-    top:1.5vh;
-    padding-left:2vw;
+    /* top:1.5vh; */
+    padding-left:5vw;
     color:rgb(115, 115, 115)
 }
 
@@ -104,7 +121,20 @@ h5{
     /* background-color: black; */
 }
 
-.c img{
+.c{
+  border:20px solid white;
+  border-bottom: 80px solid white;
+  border-radius: 20px;
+  filter: drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315));
+}
+
+.img-generic{
+  /* position: absolute; */
+  /* top:10vh; */
+  /* padding-top: 1vh; */
+  justify-self: center;
+  width:80vw;
+  height:25vh;
   border:20px solid white;
   border-bottom: 80px solid white;
   border-radius: 20px;
@@ -140,17 +170,38 @@ h1 a{
     z-index:0;
     top:10vh; */
 
-.front-butt{
-  position: relative;
-  top: 15vh;
-  height:40vh;
-}
+/* .front-butt{
+  position: absolute;
+  top: 70vh;
+  height:25vh;
+  /* left:25vw; */
+
+
 
 .fb{
-  top:10vh;
+  padding-top: 2vh;
+  padding-left:30vw;
 }
 
+.u{
+  /* text-decoration: underline; */
+  font-weight: 400;
+  font-size: .9em;
+  /* padding-top: 1vh; */
+  color:rgb(121, 121, 121);
+}
 
+a{
+  text-decoration: underline;
+}
+
+.blue{
+  color: cornflowerblue;
+}
+
+a:visited{
+  color: black;
+}
 
 .front-image img{
     /* position: absolute; */
@@ -179,8 +230,26 @@ h1 a{
     padding-left:5vw;
     z-index:100;
 }
-strong{
+/* strong{
     font-weight: 500;
+} */
+.green{
+  /* color: rgb(59, 201, 59);
+   */
+   text-decoration: none;
+   font-weight: 800;
+   color:blue;
+}
+
+a .green{
+  text-decoration: none;
+ 
+  font-weight: 700;
+  color:blue;
+}
+
+.green:visited{
+  color:blue;
 }
 .topnav {
     overflow: hidden;
@@ -189,16 +258,18 @@ strong{
     /* border-radius: 20px; */
     font-family: Arial, Helvetica, sans-serif;
     width: 80vw;
+    color:blue;
   }
 
   .split-top{
     display: flex;
     flex-direction: row;
+    color: blue;
   }
 
   .logo{
-    width:35vw;
-    height:13vh;
+    width:30vw;
+    height:10vh;
     /* padding-top:10vh; */
   }
   
@@ -241,8 +312,12 @@ strong{
   }
   
   button{
-    position: absolute;
+    /* position: absolute; */
     top:77vh;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
     left:35vw;
     background-color: blue;
     border-radius: 30px;
@@ -310,17 +385,25 @@ strong{
     z-index:0;
   }
 
-  main p, h3{
+  /* main p, h3{
     position: absolute;
     padding-left:10vw;
-  }
+  }*/
 
-  h3{
-    top: 50vh;
-    padding:8vw;
-    /* color:; */
-    font-size: 25px;
-  }
+  h4{
+    /* position: absolute; */
+    padding-left:5vw;
+    font-size: 1.25em;
+    color: rgb(84, 84, 84);
+    padding-right: 5vw;
+    /* top:20vh;s */
+    font-weight: 400;
+  } 
+
+  /* strong{
+    color:blue;
+  } */
+  
   p{
     top: 60vh;
     padding-left:15vw;
@@ -342,14 +425,12 @@ strong{
  }
 
 
- h4, h2{
+ /* h4, h2{
   /* position: absolute; */
-    padding-left:10vw;
- }
 
- h4{
+
   /* letter-spacing: .1em */
- }
+ 
 
  .review{
   position: absolute;
@@ -368,11 +449,15 @@ form{
   background-color: white;
   border-radius: 20px;
   position: absolute;
-  z-index: 100;
+  z-index: 400;
   padding-left: 10vw;
 }
 form h2{
   padding-left: 0vw;
+}
+
+h2{
+  padding-left:10vw;
 }
 
 input{

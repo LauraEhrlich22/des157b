@@ -76,13 +76,21 @@ setCursorToTopLeft(input);
 
 plus.addEventListener("click", function(){
   note.classList.remove("hide");
-  console.log("here")
+  // console.log("here")
 })
 
 var notebutton = document.querySelector(".n1")
 var form = document.querySelector("form");
+var real_note = document.querySelector(".sample-note")
 notebutton.addEventListener("click", function(){
     form.classList.remove("hide")
     note.classList.add("hide");
+    real_note.classList.add("hide");
 })
+
+
+
+
+  
+
 

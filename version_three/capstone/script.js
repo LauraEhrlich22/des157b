@@ -1,4 +1,4 @@
-alert("Hello! Thank you for testing my project. Please complete the following tasks: 1.pretend like you are already at a location on the bikeloop and add a note there for someone 2.Find the history page for the arboreturm. 3.Find the reviews for the walker hall location Note: the response will not actually be added as that feature is still under construction. The Review button is also still under construction and text is still to be added to the history pages. The history button in the menu is also non-functional at the moment, but will eventually lead to an overview of the history of the bikeloop as a whole.")
+// alert("Hello! Thank you for testing my project. Please complete the following tasks: 1.pretend like you are already at a location on the bikeloop and add a note there for someone 2.Find the history page for the arboreturm. 3.Find the reviews for the walker hall location Note: the response will not actually be added as that feature is still under construction. The Review button is also still under construction and text is still to be added to the history pages. The history button in the menu is also non-functional at the moment, but will eventually lead to an overview of the history of the bikeloop as a whole.")
 const menu = document.querySelector(".menu")
 let h = "a";
 const c = document.querySelector(".c");
@@ -17,6 +17,7 @@ menu.addEventListener("click", function() {
       topnav.style.borderRadius = "20px";
       topnav.style.filter = "drop-shadow(10px 10px 20px rgba(53, 53, 53, 0.315))";
       topnav.style.zIndex = "100";
+      topnav.style.color="blue"
       
 
     //   width:60vw;
